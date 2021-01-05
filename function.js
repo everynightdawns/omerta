@@ -5,8 +5,6 @@ $(document).mousemove(function(e) {
   });
 });
 
-
-/*
 var
     hoverBox   = $('.box-selector'),
     hoverImage = $('#image');
@@ -16,11 +14,12 @@ hoverBox.mousemove(function(e) {
         left: e.pageX,
         top:  e.pageY
     });
-}).mouseout(function() {
+})
+
+.mouseout(function() {
     hoverImage.css({
         left: -10000,
         top:  -10000
     });
 });
-*/
 // JavaScript Document

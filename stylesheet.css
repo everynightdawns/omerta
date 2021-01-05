@@ -7,10 +7,23 @@ body {
 	margin-right: 0px;
 	margin-bottom: 0px;
 	background-image: none;
-	background-color:#FFFFFF;
-	color:#EC2027;
+	background-color:#EC2027;
+	color:#FFFFFF;
 	font-family: "Times New Roman", Times, serif;
 }
+
+#image {
+	position: absolute;
+}
+
+#eye{
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}​
 
 body.flash {
 	background-image: url(img/flicker.gif);
@@ -43,16 +56,6 @@ a:link, a:visited, a:active {
 a:hover {
 	color: white;
 	text-decoration: none;
-}
-
-#enter {
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	text-align: center;
 }
 
 #video {
