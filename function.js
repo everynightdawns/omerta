@@ -4,7 +4,7 @@ $(document).mousemove(function(e) {
     top: e.pageY
   });
 });
-
+/*
 var
     hoverBox   = $('.box-selector'),
     hoverImage = $('#image');
@@ -22,4 +22,5 @@ hoverBox.mousemove(function(e) {
         top:  -10000
     });
 });
+*/
 // JavaScript Document
