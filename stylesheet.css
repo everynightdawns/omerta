@@ -6,35 +6,31 @@ body {
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-bottom: 0px;
-	background-image: url(img/seizure.gif);
-	background-color:#ec2027;
-	color:#fff;
+	background-image: none;
+	background-color:#FFFFFF;
+	color:#EC2027;
 	font-family: "Times New Roman", Times, serif;
 }
 
-#image {
-	position:absolute;
-}
-
 body.flash {
-	background-image: url(img/seizure.gif);
+	background-image: url(img/flicker.gif);
 }
 
 td.flash {
 	color:#ffffff;
-	background-image: url(img/seizure.gif);
+	background-image: url(img/flicker.gif);
 }
 
 td.e2 {
 	color:#ffffff;
-	background-image: url(img/seizure.gif);
+	background-image: url(img/flicker.gif);
     text-align: center; 
     vertical-align: middle;
 }
 
 td.e {
 	color:#ffffff;
-	background-image: url(img/seizure.gif);
+	background-image: url(img/flicker.gif);
     text-align: center; 
     vertical-align: middle;
 }
@@ -49,14 +45,14 @@ a:hover {
 	text-decoration: none;
 }
 
-#eyeball {
-	text-align: center;
+#enter {
 	margin: 0;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
+	text-align: center;
 }
 
 #video {
