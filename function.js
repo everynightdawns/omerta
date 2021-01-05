@@ -1,26 +1,28 @@
+/*
 $(document).mousemove(function(e) {
   $("#image").css({
     left: e.pageX,
     top: e.pageY
   });
 });
-/*
-var
-    hoverBox   = $('.box-selector'),
-    hoverImage = $('#image');
-
-hoverBox.mousemove(function(e) {
-    hoverImage.css({
-        left: e.pageX,
-        top:  e.pageY
-    });
-})
-
-.mouseout(function() {
-    hoverImage.css({
-        left: -10000,
-        top:  -10000
-    });
-});
 */
+
+$(document).mousemove(function(e) {
+  const height = $('#image').height() / 8;
+  const width = $('#image').width() / 8;
+  $("#image").css({
+    left: e.pageX - width,
+    top: e.pageY - height
+  });
+});
+
+$('.box').mouseenter(_ => {
+  $('#image').show();
+});
+
+$('.box').mouseleave(_ => {
+  $('#image').hide();
+});
+
+
 // JavaScript Document
