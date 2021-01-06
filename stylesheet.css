@@ -12,39 +12,48 @@ body {
 	font-family: "Times New Roman", Times, serif;
 }
 
-#eye {
+body.enter {
+	text-align: center;
 	margin: 0;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-}​
-
-.box {
-    height: 278px;
-    width: 500px;
-    margin: 0;
 }
 
-#image {
-    position:absolute;
+div.eyes {
     width: 500px;
     height: 277.78px;
-    display: none;
-    pointer-events: none;
-    /* visibility: hidden; */
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 40px;
 }
 
-#iris {
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	height: 300px;
-    width: 300px;
+div.eye {
+    width: 500px;
+    height: 277.78px;
+    top: 0;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center center;          
+}
+
+div.eyes div.pupil {
+	left: 140px;
+	top: 55px;
+	width: 193.33px;
+	height: 179.44px;
+    position: relative;
+    background-image: url(img/pupil.png);
+    background-repeat: no-repeat;
+    background-position: center center;  
+	background-size: 193.33px 179.44px;       
+}
+
+#circular div.eye {
+    background-image: url(img/eyeball.png);
+	background-size: 500px 277.78px;
 }
 
 body.flash {
@@ -108,18 +117,6 @@ a:hover {
 	padding-top: 10;
 }
 	
-#enter {
-	font-family: "Times New Roman", Times, serif;
-	font-size: 20px;
-	color: #FFFFFF;
-	margin: 0;
-	position: absolute;
-	top: 25%;
-	left: 50%;
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	text-align: center;
-}
 #dog {
 	margin: 0;
 	position: absolute;
