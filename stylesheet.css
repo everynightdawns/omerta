@@ -13,8 +13,6 @@ body {
 }
 
 body.enter {
-	text-align: center;
-	margin: 0;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -54,6 +52,49 @@ div.eyes div.pupil {
 #circular div.eye {
     background-image: url(img/eyeball.png);
 	background-size: 500px 277.78px;
+}
+
+#menu {
+	font-family: Consolas, Inconsolata, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
+	font-size: 12pt;
+	letter-spacing: 1px;
+	text-align:center;
+	padding: 0px 0px 0px 0px;
+	margin: 0 auto;
+	display: block;
+}
+
+.social tr {
+	line-height: 300px;
+}
+
+td.portal {
+	position: relative;
+	text-align: center;
+	visiblity: visible;
+	width: 100%;
+}
+
+.overlay {
+	display: none;
+}
+
+td.portal:hover img{
+	visibility: hidden;
+}
+
+td.portal:hover .overlay{
+	font-family: Consolas, Inconsolata, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
+	font-size: 14pt;
+	letter-spacing: 1px;
+	text-align:center;
+	padding: 0px 0px 0px 0px;
+	margin: 0 auto;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 body.flash {
