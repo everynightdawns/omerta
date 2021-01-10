@@ -10,6 +10,8 @@ body {
 	background-color:#ff0b0b;
 	color:#FFFFFF;
 	font-family: "Times New Roman", Times, serif;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 body.enter {
