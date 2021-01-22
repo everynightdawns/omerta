@@ -8,7 +8,23 @@ body {
 	margin-bottom: 0px;
 	background-image: none;
 	background-color:#ff0b0b;
-	color:#FFFFFF;
+	color:#000000;
+	font-family: Consolas, Inconsolata, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
+	font-size: 12pt;
+	margin-top: 90px;
+	margin-bottom: 15px;
+	overflow: auto;
+}
+
+body.construction {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	padding-top: 90px;
+	background-image: none;
+	background-color:#ffffff;
+	color:#000000;
 	font-family: Consolas, Inconsolata, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
 	font-size: 12pt;
 	margin-top: 90px;
@@ -70,6 +86,20 @@ div.eyes div.pupil {
 	left: 50%;
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
+}
+
+.language {
+	display: block;
+	text-align: center;
+	max-width: 900px;
+	margin: auto;
+}
+
+.language pre {
+	display: inline-block;
+	text-align: left;
+	max-width: 900px;
+	margin: auto;
 }
 
 td.portal {
