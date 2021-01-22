@@ -64,10 +64,11 @@ div.eyes div.pupil {
 	padding: 0px 0px 0px 0px;
 	margin: 0 auto;
 	display: block;
-}
-
-.social tr {
-	line-height: 300px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
 
 td.portal {
