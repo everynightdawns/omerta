@@ -9,9 +9,12 @@ body {
 	background-image: none;
 	background-color:#ff0b0b;
 	color:#FFFFFF;
-	font-family: "Times New Roman", Times, serif;
-	margin-top: 15px;
+	font-family: Consolas, Inconsolata, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
+	font-size: 8pt;
+	letter-spacing: 1px;
+	margin-top: 90px;
 	margin-bottom: 15px;
+	overflow: auto;
 }
 
 body.enter {
