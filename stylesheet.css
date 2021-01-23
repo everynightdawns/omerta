@@ -1,6 +1,15 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* iPhone, portrait & landscape. */
+@media all and (max-device-width: 480px) {
+    html,body { -webkit-text-size-adjust:none; }
+}
+/* iPad, portrait & landscape. */
+@media all and (min-device-width: 768px) and (max-device-width: 1024px) {
+    html,body { -webkit-text-size-adjust:none; }
+}
+
 body {
 	margin-left: 0px;
 	margin-top: 0px;
@@ -89,9 +98,10 @@ div.eyes div.pupil {
 }
 
 .language {
+	font-size: 12pt;
 	display: block;
 	text-align: center;
-	max-width: 900px;
+	max-width: 490px;
 	margin: auto;
 }
 
