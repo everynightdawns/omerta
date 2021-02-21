@@ -19,6 +19,56 @@
 
 <body>
 <div class="news">
+⦿2/21/2⦿21<hr style="height:2px;border-width:0;color:black;background-color:black" /><br />
+Yo, this is Gustavo. I just wanted to say thank you for helping us nearly sell out of all of our new merch in less than a day. We're all extremely grateful for everyone's support. We actually have a few more surprises in store so stay tuned.<br /><br />Anyway, last night we decided to celebrate the 1 year anniversary of Hyperviolence and got the whole team together for a little "party". It was fun but remind me not to ever let Han near a grill again. Here's some of what happened last night.<br /><br />
+<center>
+<img src="img/anniversary.jpg" width="640" /><br /><br />
+
+<div style="text-align:center">
+  <video id="video1" width="640" controls autoplay>
+    <source src="img/IMG_1087.mov" type="video/mp4">
+        <source type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <br />
+  <button class="button" onclick="previousButton()">🡄</button>
+  <button class="button" onclick="nextButton()">🡆</button>
+</div> 
+
+<script> 
+var myVideo=document.getElementById("video1"); 
+var videoList=['IMG_1088.mov','IMG_1089.mov','IMG_1090.mov','IMG_1091.mov','IMG_1092.mov','IMG_1093.mov','IMG_1094.mp4','IMG_1095.mov','IMG_1096.mov','IMG_1098.mov', 'IMG_1087.mov'];
+var index = videoList.indexOf(window.currentVideoName);
+
+//Next button
+function nextButton(){
+myVideo.pause();
+myVideo.currentTime=0;
+index = index + 1;
+	if(index==videoList.length){
+		index = 0;
+	}
+	myVideo.src = 'img/'+videoList[index];
+	window.currentVideoName=videoList[index];
+	myVideo.play();
+}
+
+//Previous button
+function previousButton(){
+myVideo.pause();
+myVideo.currentTime=0;
+index = index - 1;
+	if(index < 0){
+		index = videoList.length - 2;
+	}
+	myVideo.src ='img/'+videoList[index];
+	window.currentVideoName=videoList[index];
+	myVideo.play();
+}
+</script>
+⦿</center>
+</div>
+<div class="news">
 ⦿2/2⦿/2⦿21<hr style="height:2px;border-width:0;color:black;background-color:black" /><br />
 t⦿DaY mArKS 1 yEAr ⦿F hyPɘRvi⦿LɘNCE.<br />⦿uR nɘW s⦿Ng "<a href="http://iluvu2.ihateomerta.com">i luv u 2</a>" iS n⦿W aVAiLaBLɘ ɘVEryWhɘRE<br /><br />
 <div id="video">
@@ -31,6 +81,7 @@ t⦿DaY mArKS 1 yEAr ⦿F hyPɘRvi⦿LɘNCE.<br />⦿uR nɘW s⦿Ng "<a href="ht
 <li><a href="https://www.amazon.com/dp/B08X17J7T8?tag=ton08-20&linkCode=osi&th=1&psc=1" target="_blank">aMaz⦿N mUsiC</a></li>
 <li><a href="https://ihateomerta.bandcamp.com/track/i-luv-u-2" target="_blank">bAnDCaMp</a></li>
 </ul>
+<center>⦿</center>
 </div>
 
 <table width="900" border=0 cellpadding=3 cellspacing=3 height=20 align="center">
