@@ -1,5 +1,5 @@
 var myImage=document.getElementById("image1");
-var imageList=['File_004.jpg', 'File_005.jpg','File_000.jpg','File_001.jpg','File_002.jpg','File_003.jpg','File_006.jpg','File_007.jpg','IMG_5672.jpg','IMG_5673.jpg'];
+var imageList=['File_004.jpg', 'File_005.jpg','File_000.jpg','File_001.jpg','File_002.jpg','File_003.jpg','File_006.jpg','File_007.jpg','IMG_5672.jpg','IMG_5673.jpg','File_008.jpg','File_009.jpg','File_011.jpg','File_010.jpg'];
 var index = imageList.indexOf(window.currentImageName);
 
 //Next button

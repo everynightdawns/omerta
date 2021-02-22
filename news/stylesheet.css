@@ -1,0 +1,233 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* iPhone, portrait & landscape. */
+@media all and (max-device-width: 480px) {
+    html,body { -webkit-text-size-adjust:none; }
+}
+/* iPad, portrait & landscape. */
+@media all and (min-device-width: 768px) and (max-device-width: 1024px) {
+    html,body { -webkit-text-size-adjust:none; }
+}
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: none;
+	background-color:#ff0b0b;
+	color:#000000;
+	font-family: Consolas, Inconsolata, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
+	font-size: 12pt;
+	margin-top: 90px;
+	margin-bottom: 15px;
+	overflow: auto;
+}
+
+body.construction {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	padding-top: 90px;
+	background-image: none;
+	background-color:#ffffff;
+	color:#000000;
+	font-family: Consolas, Inconsolata, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
+	font-size: 12pt;
+	margin-top: 90px;
+	margin-bottom: 15px;
+	overflow: auto;
+}
+
+body.enter {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+div.eyes {
+    width: 500px;
+    height: 277.78px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+div.eye {
+    width: 500px;
+    height: 277.78px;
+    top: 0;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center center;          
+}
+
+div.eyes div.pupil {
+	left: 140px;
+	top: 55px;
+	width: 193.33px;
+	height: 179.44px;
+    position: relative;
+    background-image: url(img/pupil.png);
+    background-repeat: no-repeat;
+    background-position: center center;  
+	background-size: 193.33px 179.44px;       
+}
+
+#circular div.eye {
+    background-image: url(img/eyeball.png);
+	background-size: 500px 277.78px;
+}
+
+#menu {
+	font-family: Consolas, Inconsolata, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
+	font-size: 12pt;
+	letter-spacing: 1px;
+	text-align:center;
+	padding: 0px 0px 0px 0px;
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.language {
+	font-size: 12pt;
+	display: block;
+	text-align: center;
+	max-width: 900px;
+	margin: auto;
+}
+
+.news {
+	font-size: 12pt;
+	display: block;
+	max-width: 900px;
+	margin: auto;
+	padding: 15px 0px 15px 0px;
+}
+
+.language pre {
+	display: inline-block;
+	text-align: left;
+	max-width: 900px;
+	margin: auto;
+}
+
+td.portal {
+	position: relative;
+	text-align: center;
+	visiblity: visible;
+	width: 100%;
+}
+
+.overlay {
+	display: none;
+}
+
+td.portal:hover img{
+	visibility: hidden;
+}
+
+td.portal:hover .overlay{
+	font-family: Consolas, Inconsolata, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
+	font-size: 12pt;
+	letter-spacing: 1px;
+	text-align:center;
+	padding: 0px 0px 0px 0px;
+	margin: 0 auto;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+body.flash {
+	background-image: url(img/flicker.gif);
+}
+
+td.flash {
+	color:#ffffff;
+	background-image: url(img/flicker.gif);
+}
+
+td.e2 {
+	color:#ffffff;
+	background-image: url(img/flicker.gif);
+    text-align: center; 
+    vertical-align: middle;
+}
+
+td.e {
+	color:#ffffff;
+	background-image: url(img/flicker.gif);
+    text-align: center; 
+    vertical-align: middle;
+}
+
+a:link, a:visited, a:active {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+#video {
+	width:100%;
+	margin:0;
+	padding:3px 0px 5px 0px;
+	text-align:center;
+	font-size:35px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#video iframe {
+	border-color: #000000;
+	border-style:none;
+	border-width:0px;
+	margin-right: 0 auto;
+}
+
+#construction {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	padding-bottom: 10;
+	padding-top: 10;
+}
+	
+#dog {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.button {
+  background-color: #FF0b0b;
+  border: 2px;
+  color: black;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}

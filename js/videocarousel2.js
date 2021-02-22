@@ -1,5 +1,5 @@
 var myVideo=document.getElementById("video2");
-var videoList=['IMG_1116.mov', 'IMG_1110.mov','IMG_1117.mov','IMG_1115.mov','IMG_1109.mov'];
+var videoList=['IMG_1116.mov', 'IMG_1110.mov','IMG_1117.mov','IMG_1115.mov','IMG_1109.mov','IMG_1125.mov','IMG_1123.mov','IMG_1131.mov'];
 var index = videoList.indexOf(window.currentVideoName);
 
 //Next button

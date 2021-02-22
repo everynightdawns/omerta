@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+pre {
+	letter-spacing: .25px;
+}
+#menu {
+	font-size:smaller;
+	width:100%;
+	background-position:center;
+	}
+#newsText {
+	font-size:smaller;
+	width:100%;
+	background-position:center;
+	}
+#promo {
+	width:100%;
+	background-position:center;
+}
+#contact {
+	width: 300px;
+}
+.construction {
+	font-size:50%;
+	line-height:100%;
+	width:425px;
+}
