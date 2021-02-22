@@ -18,14 +18,41 @@
 </head>
 
 <body>
+
+<div class="news">
+⦿2/22/2⦿21<hr style="height:2px;border-width:0;color:black;background-color:black" /><br />
+Yoooooo, what’s up, everyone? This is Han. I just wanted to say thank y’all again for all of the amazing feedback for our single “i luv u 2” that we just dropped the other day for the 1 year anniversary of “Hyperviolence”.<br /><br />Like Gus said before, we have more shit coming your way. Yesterday we started working on a little something something for y’all ;) This is the first time we’re doing something like this, and we hope y’all enjoy what’s to come. Thanks, one luv, ah haha.<br /><br />
+
+<div style="text-align:center">
+  <img id="image1" width="900" src="img/File_004.jpg">
+  <br />
+  <button class="button" onclick="previousButton3()">⬅️</button>
+  <button class="button" onclick="nextButton3()">➡️</button>
+</div>
+
+<br /><br />
+
+<div style="text-align:center">
+  <video id="video2" width="900" controls>
+    <source src="img/IMG_1116.mov" type="video/mp4">
+        <source type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <br />
+  <button class="button" onclick="previousButton2()">⬅️</button>
+  <button class="button" onclick="nextButton2()">➡️</button>
+</div> 
+<center>⦿</center>
+</div>
+
 <div class="news">
 ⦿2/21/2⦿21<hr style="height:2px;border-width:0;color:black;background-color:black" /><br />
 What's good, y'all? This is Gustavo. I wanted to personally, on behalf of Omerta and the crew, tell y'all thank you for your endless support and nearly selling out all our new merch in less than a day. Y'all motherfuckers crazy, but, anyway, we got some more shit coming y'all's way so stay tuned.<br /><br />Oh, we also rallied up the crew and celebrated the 1 year anniversary of Hyperviolence. 'Twas a good time, but it served as a reminder to not let baby girl Kim near a grill, or else there ain't gonna be any more Omerta. Anyway, y'all enjoy!<br /><br />
 <center>
-<img src="img/anniversary.jpg" width="640" /><br /><br />
+<img src="img/anniversary.jpg" width="900" /><br /><br />
 
 <div style="text-align:center">
-  <video id="video1" width="640" controls>
+  <video id="video1" width="900" controls>
     <source src="img/IMG_1088.mov" type="video/mp4">
         <source type="video/mp4">
     Your browser does not support HTML5 video.
@@ -33,49 +60,15 @@ What's good, y'all? This is Gustavo. I wanted to personally, on behalf of Omerta
   <br />
   <button class="button" onclick="previousButton()">⬅️</button>
   <button class="button" onclick="nextButton()">➡️</button>
-</div> 
-
-<script> 
-var myVideo=document.getElementById("video1"); 
-var videoList=['IMG_1088.mov', 'IMG_1095.mov','IMG_1091.mov','IMG_1098.mov','IMG_1092.mov','IMG_1090.mov','IMG_1087.mov','IMG_1094.mp4','IMG_1089.mov','IMG_1093.mov','IMG_1096.mov'];
-var index = videoList.indexOf(window.currentVideoName);
-
-//Next button
-function nextButton(){
-myVideo.pause();
-myVideo.currentTime=0;
-index = index + 1;
-	if(index==videoList.length){
-		index = 0;
-	}
-	else if(index==0){
-		index = index + 1;
-	}
-	myVideo.src = 'img/'+videoList[index];
-	window.currentVideoName=videoList[index];
-	myVideo.play();
-}
-
-//Previous button
-function previousButton(){
-myVideo.pause();
-myVideo.currentTime=0;
-index = index - 1;
-	if(index < 0){
-		index = videoList.length - 1;
-	}
-	myVideo.src ='img/'+videoList[index];
-	window.currentVideoName=videoList[index];
-	myVideo.play();
-}
-</script>
+</div>
 ⦿</center>
 </div>
+
 <div class="news">
 ⦿2/2⦿/2⦿21<hr style="height:2px;border-width:0;color:black;background-color:black" /><br />
 t⦿DaY mArKS 1 yEAr ⦿F hyPɘRvi⦿LɘNCE.<br />⦿uR nɘW s⦿Ng "<a href="http://iluvu2.ihateomerta.com">i luv u 2</a>" iS n⦿W aVAiLaBLɘ ɘVEryWhɘRE<br /><br />
 <div id="video">
-	<iframe width="628" height="354" src="https://www.youtube.com/embed/0E2kYHF9Mzc?rel=0" frameborder="0" allowfullscreen></iframe>
+	<iframe width="900" height="507" src="https://www.youtube.com/embed/0E2kYHF9Mzc?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
 <ul>
 <li><a href="https://open.spotify.com/track/73erZF1LsZyXyo0Y1yUxL0" target="_blank">sP⦿tiFY</a></li>
@@ -101,6 +94,8 @@ t⦿DaY mArKS 1 yEAr ⦿F hyPɘRvi⦿LɘNCE.<br />⦿uR nɘW s⦿Ng "<a href="ht
 </table>
 
 <script type="text/javascript" src="js/function.js"></script>
-
+<script type="text/javascript" src="js/videocarousel.js"></script>
+<script type="text/javascript" src="js/videocarousel2.js"></script>
+<script type="text/javascript" src="js/imagecarousel.js"></script>
 </body>
 </html>

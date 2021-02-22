@@ -101,14 +101,14 @@ div.eyes div.pupil {
 	font-size: 12pt;
 	display: block;
 	text-align: center;
-	max-width: 640px;
+	max-width: 900px;
 	margin: auto;
 }
 
 .news {
 	font-size: 12pt;
 	display: block;
-	max-width: 640px;
+	max-width: 900px;
 	margin: auto;
 	padding: 15px 0px 15px 0px;
 }
