@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>⦿mɘRtA</title>
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon"sizes="180x180"href="/apple-touch-icon.png">
+<link rel="icon"type="image/png"sizes="32x32"href="/favicon-32x32.png">
+<link rel="icon"type="image/png"sizes="16x16"href="/favicon-16x16.png">
+
+<link rel="stylesheet" type="text/css" href="stylesheet.css" media ="all">
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/jqeye.min.js"></script>
+
+</head>
+
+<body>
+
+<!--BEFORE USING THIS TEMPLATE
+Make sure you've uploaded your news entry as a .txt file or Google Docs file to the Google Drive folder under "News" and under the correct date. Title it whatever you want, but make it simple and clear to understand the purpose of. Put all necessary images and videos into a folder you will create in the date folder and title it "img". Last, MAKE SURE THIS DOCUMENT IS TITLED index.html otherwise this will NOT work properly.
+-->
+
+
+<!--NEWS TEXT SECTION
+Update the date with the date of your particular page. Next, replace the text starting after :black" /><br />. On this page, the text section begins with "What's good everyone". Use <br /> or <br> to start text on a new line. Use 2 consecutive <br /> or <br> to create a paragraph break. Style this text/section however you want, but don't make it look too ugly or inconsistent. Hyperlink whatever is needed for user convenience.
+-->
+
+<div class="news">
+⦿2/23/2⦿21<hr style="height:2px;border-width:0;color:black;background-color:black" /><br />
+What’s good everyone, Cody here. Just sitting here sweating my ass off after a practice session. Hope everyone is staying safe and healthy in this time. This whole not being able to play shows SUCKS and we really miss being able to fuck things up with you guys.<br /><br />Although, since we can’t meet you all in person YET, I’m so stoked to show you guys what we have coming next. In the meantime, there’s this band also from Houston called “<a href="https://www.facebook.com/fromjoy.ex/" target="_blank">fromjoy</a>” that you should all check out. They just a released a new single called “<a href="https://youtu.be/i4Fp3I7Lhjc" target="_blank">hollow.treatment</a>” and i definitely encourage you all to listen.<br /><br />Much luv to you all and see you soon❤
+<br /><br />
+
+<!--IMAGE CAROUSEL SECTION
+Find the name of the first image you want displayed in the carousel. Using this page as an example, you would replace the entire image carousel code with code for a single image. In this case, I disabled the code so I can simply bring it back in case I might need it the next time I want to write a news post. Make sure to be careful to take note of whether your file name ends in .jpg or .jpeg. This is EXTREMELY important. If you would like to convert it from .jpeg to .jpg you can simply rename the file extension manually in Google Drive or on your respective operating system's file explorer folder system.
+
+If you only want to and/or need to upload a single image, simply use <img src="img/YourFileName.jpg" width="900"> Make sure to keep the width 900 so it stays consistent across all the news pages.
+-->
+
+<!-- IMAGE CAROUSEL CODE START-->
+<!--
+<div style="text-align:center">
+  <img id="image1" width="900" src="img/File_004.jpg">
+  <br />
+  <button class="button" onclick="previousButton3()">⬅️</button>
+  <button class="button" onclick="nextButton3()">➡️</button>
+</div>
+
+<script>
+var myImage=document.getElementById("image1");
+var imageList=['File_004.jpg', 'File_005.jpg','File_000.jpg','File_001.jpg','File_002.jpg','File_003.jpg','File_006.jpg','File_007.jpg','IMG_5672.jpg','IMG_5673.jpg','File_008.jpg','File_009.jpg','File_011.jpg','File_010.jpg'];
+var index = imageList.indexOf(window.currentImageName);
+
+//Next button
+function nextButton3(){
+index = index + 1;
+	if(index==imageList.length){
+		index = 0;
+	}
+	else if(index==0){
+		index = index + 1;
+	}
+	myImage.src = 'img/'+imageList[index];
+	window.currentImageName=imageList[index];
+}
+
+//Previous button
+function previousButton3(){
+index = index - 1;
+	if(index < 0){
+		index = imageList.length - 1;
+	}
+	myImage.src ='img/'+imageList[index];
+	window.currentImageName=imageList[index];
+}
+</script>
+-->
+<!-- IMAGE CAROUSEL CODE END-->
+
+<img src="img/File_012.jpg" width="900">
+
+<br /><br />
+
+<!--VIDEO CAROUSEL SECTION
+Find the name of the first video you want displayed in the carousel. Using this page as an example, you would replace the entire video carousel with code for a single video. In this case, I disabled the code so I can simply bring it back in case I might need it the next time I want to write a news post.
+
+If you only want to and/or need to upload a single video, simply use <video src="img/YourFileName.mov" width="900" controls autoplay></video><br /> or <video src="img/YourFileName.mp4" width="900" controls autoplay></video><br /> depending on the video file type. Make sure to keep the width 900 so it stays consistent across all the news pages.
+-->
+
+<!--VIDEO CAROUSEL START-->
+<!--
+<div style="text-align:center">
+  <video id="video2" width="900" controls autoplay>
+    <source src="img/IMG_1116.mov" type="video/mp4">
+        <source type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <br />
+  <button class="button" onclick="previousButton2()">⬅️</button>
+  <button class="button" onclick="nextButton2()">➡️</button>
+</div>
+
+<script>
+var myVideo=document.getElementById("video2");
+var videoList=['IMG_1116.mov', 'IMG_1110.mov','IMG_1117.mov','IMG_1115.mov','IMG_1109.mov','IMG_1125.mov','IMG_1123.mov','IMG_1131.mov'];
+var index2 = videoList.indexOf(window.currentVideoName);
+
+//Next button
+function nextButton2(){
+myVideo.pause();
+myVideo.currentTime=0;
+index2 = index2 + 1;
+	if(index2==videoList.length){
+		index2 = 0;
+	}
+	else if(index2==0){
+		index2 = index2 + 1;
+	}
+	myVideo.src = 'img/'+videoList[index2];
+	window.currentVideoName=videoList[index2];
+	myVideo.play();
+}
+
+//Previous button
+function previousButton2(){
+myVideo.pause();
+myVideo.currentTime=0;
+index2 = index2 - 1;
+	if(index2 < 0){
+		index2 = videoList.length - 1;
+	}
+	myVideo.src ='img/'+videoList[index2];
+	window.currentVideoName=videoList[index2];
+	myVideo.play();
+}
+</script>
+-->
+<!--VIDEO CAROUSEL END-->
+
+<video src="img/IMG_1140.mov" width="900" controls autoplay></video><br />
+
+<!--PAGE INDEX SECTION
+The most recent page should always be denoted with the Omerta concentric circle symbol: ⦿. It may look like a box on some devices, but that is the symbol. Simply copy and paste if needed.
+Every other page should be numbered in descending order starting from the most recent page. In this case, the page is index.html, so you would make sure the numbers on the index are 1, 2, and 3, while this page (4) is implied with the ⦿ symbol. Eventually, there will be a page 5 and so-on. Since this is the page with the most recent news, make sure that the link redirects to "" rather than "/news" so it will simply redirect to itself rather than somewhere else.
+-->
+
+<br />
+<center>
+<a href="/news">⦿</a>
+<a href="4.html">4</a>
+<a href="3.html">3</a>
+<a href="2.html">2</a>
+<a href="1.html">1</a>
+</center>
+</div>
+
+<table width="450" border=0 cellpadding=3 cellspacing=3 height=20 align="center">
+<tr>
+<td class="portal" style="width: 100%"><a href="../index.html">
+<div id="circular" class="eyes">
+    <div class="eye">
+        <div class="pupil"></div>
+    </div>
+</div>
+</a>
+</td>
+</tr>
+</table>
+
+<script type="text/javascript" src="js/function.js"></script>
+</body>
+</html>
