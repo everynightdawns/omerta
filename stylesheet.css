@@ -113,6 +113,18 @@ div.eyes div.pupil {
 	padding: 15px 0px 15px 0px;
 }
 
+.image {
+	outline: solid 2px #000000;
+}
+
+.promo {
+	display: block;
+	max-width: 900px;
+	margin: auto;
+	padding: 0px 0px 15px 0px;
+}
+
+
 .language pre {
 	display: inline-block;
 	text-align: left;
