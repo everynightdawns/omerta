@@ -1,0 +1,174 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>⦿mɘRtA</title>
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon"sizes="180x180"href="/apple-touch-icon.png">
+<link rel="icon"type="image/png"sizes="32x32"href="/favicon-32x32.png">
+<link rel="icon"type="image/png"sizes="16x16"href="/favicon-16x16.png">
+
+<link rel="stylesheet" type="text/css" href="stylesheet.css" media ="all">
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/jqeye.min.js"></script>
+
+</head>
+
+<body>
+
+<!--BEFORE USING THIS TEMPLATE
+Make sure you've uploaded your news entry as a .txt file or Google Docs file to the Google Drive folder under "News" and under the correct date. Title it whatever you want, but make it simple and clear to understand the purpose of. Put all necessary images and videos into a folder you will create in the date folder and title it "img". Last, MAKE SURE THIS DOCUMENT IS TITLED index.html otherwise this will NOT work properly.
+-->
+
+
+<!--NEWS TEXT SECTION
+Update the date with the date of your particular page. Next, replace the text starting after :black" /><br />. On this page, the text section begins with "yoooooo". Use <br /> or <br> to start text on a new line. Use 2 consecutive <br /> or <br> to create a paragraph break. Style this text/section however you want, but don't make it look too ugly or inconsistent. Hyperlink whatever is needed for user convenience.
+-->
+
+<div class="news">
+⦿3/⦿2/2⦿21<hr style="height:2px;border-width:0;color:black;background-color:black" /><br />
+Back again, It’s ya boy zorn
+<br /><br /> I often think about the amount of time the boys and I spend together. The fact that everyone manages to get along so well despite that amazes me. Although there’s generally a ton of work to be done, we still find the time to goof off and make the most of it. <br /><br /> Here’s some of my favorite “goof off” moments over the last year with the omerta and the endproject boys. <br /><br /> Peace <br /><br />
+
+<!--IMAGE CAROUSEL SECTION
+Find the name of the first image you want displayed in the carousel. Using this page as an example, you would replace File_004.jpg (on the line starting with <img id="image1") with the new file name. Make sure to be careful to take note of whether your file name ends in .jpg or .jpeg. This is EXTREMELY important. If you would like to convert it from .jpeg to .jpg you can simply rename the file extension manually in Google Drive or on your respective operating system's file explorer folder system. Now for the rest of the images, go down to the line starting with var imageList and replace the file names with the images' file names in the order you want them to be displayed. Remember to include the name of the image you selected to be displayed first at the beginning of this list, otherwise the carousel function will not work properly.
+
+If you only want to and/or need to upload a single image, simply replace the code with <img src="img/YourFileName.jpg" width="900"> Make sure to keep the width 900 so it stays consistent across all the news pages. Also, if this is the case, make sure to either delete or disable the carousel code. I have created tags to show you where the code begins and ends.
+-->
+
+<!-- IMAGE CAROUSEL CODE START-->
+<div style="text-align:center">
+  <img id="image1" width="900" src="img/sup.jpg">
+  <br />
+  <button class="button" onclick="previousButton3()">⬅️</button>
+  <button class="button" onclick="nextButton3()">➡️</button>
+</div>
+
+<script>
+var myImage=document.getElementById("image1");
+var imageList=['sup.jpg','sup2.jpg','sup3.jpg','sup4.jpg','sup5.jpg'];
+var index = imageList.indexOf(window.currentImageName);
+
+//Next button
+function nextButton3(){
+index = index + 1;
+	if(index==imageList.length){
+		index = 0;
+	}
+	else if(index==0){
+		index = index + 1;
+	}
+	myImage.src = 'img/'+imageList[index];
+	window.currentImageName=imageList[index];
+}
+
+//Previous button
+function previousButton3(){
+index = index - 1;
+	if(index < 0){
+		index = imageList.length - 1;
+	}
+	myImage.src ='img/'+imageList[index];
+	window.currentImageName=imageList[index];
+}
+</script>
+<!-- IMAGE CAROUSEL CODE END-->
+
+<br /><br />
+
+<!--VIDEO CAROUSEL SECTION
+Find the name of the first video you want displayed in the carousel. Using this page as an example, you would replace IMG_1116.mov (on the line starting with <source src="img) with the new file name. Now for the rest of the videos, go down to the line starting with var videoList and replace the file names with the videos' file names in the order you want them to be displayed. Remember to include the name of the video you selected to be displayed first at the beginning of this list, otherwise the carousel function will not work properly.
+
+If you only want to and/or need to upload a single video, simply replace the code with <video src="img/YourFileName.mov" width="900" controls autoplay></video><br /> or <video src="img/YourFileName.mp4" width="900" controls autoplay></video><br /> depending on the video file type. Make sure to keep the width 900 so it stays consistent across all the news pages. Also, if this is the case, make sure to either delete or disable the carousel code. I have created tags to show you where the code begins and ends.
+-->
+
+<!--VIDEO CAROUSEL START-->
+<div style="text-align:center">
+  <video id="video2" width="900" controls autoplay>
+    <source src="img/yo.mov" type="video/mp4">
+        <source type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <br />
+  <button class="button" onclick="previousButton2()">⬅️</button>
+  <button class="button" onclick="nextButton2()">➡️</button>
+</div>
+
+<script>
+var myVideo=document.getElementById("video2");
+var videoList=['yo.mov', 'yoo.mov'];
+var index2 = videoList.indexOf(window.currentVideoName);
+
+//Next button
+function nextButton2(){
+myVideo.pause();
+myVideo.currentTime=0;
+index2 = index2 + 1;
+	if(index2==videoList.length){
+		index2 = 0;
+	}
+	else if(index2==0){
+		index2 = index2 + 1;
+	}
+	myVideo.src = 'img/'+videoList[index2];
+	window.currentVideoName=videoList[index2];
+	myVideo.play();
+}
+
+//Previous button
+function previousButton2(){
+myVideo.pause();
+myVideo.currentTime=0;
+index2 = index2 - 1;
+	if(index2 < 0){
+		index2 = videoList.length - 1;
+	}
+	myVideo.src ='img/'+videoList[index2];
+	window.currentVideoName=videoList[index2];
+	myVideo.play();
+}
+</script>
+<!--VIDEO CAROUSEL END-->
+
+<!--PAGE INDEX SECTION
+The most recent page should always be denoted with the Omerta concentric circle symbol: ?. It may look like a box on some devices, but that is the symbol. Simply copy and paste if needed.
+Every other page should be numbered in descending order starting from the most recent page. In this case, the page is index.html, so you would make sure the numbers on the index are 1, 2, and 3, while this page (4) is implied with the ? symbol. Eventually, there will be a page 5 and so-on. Since this is the page with the most recent news, make sure that the link redirects to "" rather than "/news" so it will simply redirect to itself rather than somewhere else.
+-->
+
+<br />
+<center>
+<a href="/news">⦿</a>
+<a href="10.html">10</a>
+<a href="9.html">9</a>
+<a href="8.html">8</a>
+<a href="7.html">7</a>
+<a href="6.html">6</a>
+<a href="5.html">5</a>
+<a href="4.html">4</a>
+<a href="3.html">3</a>
+<a href="2.html">2</a>
+<a href="1.html">1</a>
+</center>
+</div>
+
+<table width="450" border=0 cellpadding=3 cellspacing=3 height=20 align="center">
+<tr>
+<td class="portal" style="width: 100%"><a href="../index.html">
+<div id="circular" class="eyes">
+    <div class="eye">
+        <div class="pupil"></div>
+    </div>
+</div>
+</a>
+</td>
+</tr>
+</table>
+
+<script type="text/javascript" src="js/function.js"></script>
+</body>
+</html>
+
