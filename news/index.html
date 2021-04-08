@@ -30,51 +30,20 @@ Update the date with the date of your particular page. Next, replace the text st
 -->
 
 <div class="news">
-⦿3/24/2⦿21<hr style="height:2px;border-width:0;color:black;background-color:black" /><br />Hey guys! It’s Carlos again! I know it’s been a while but Im back again with another recipe! Today we’re making an Omerta favorite, Mapo Tofu! A little known fact about us is that we absolutely LOVE Szechuan food! And this dish being one of our favorites along with spicy crispy chicken, twice cooked pork and many more! But here’s a twist. I wanted to make this dish a little healthier by not adding as much oil and fat. Not only is this a super spicy and tasty dish, it’s also super easy to make!<br/>
-
-<br>Here’s what you need!<br>
-    <ul>
-    <li>1 lbs ground chicken</li>
-    <li>6-7 large diced shiitake mushrooms</li>
-    <li>3-4 minced large cloves of garlic</li> 
-    <li>1 tbs of minced ginger</li>
-    <li>1 tbs bloomed szechuan peppercorn</li>
-    <li>2 tbs of chili oil</li>
-    <li>2 tbs doubanjiang (spicy fermented soybean paste)</li>
-    <li>1 pack of diced medium firm tofu</li>
-    <li>3-4 tbs of dark soy sauce</li> 
-    <li>1 tbs brown rice syrup (can be substituted with any other sweetener as long as it can be easily diluted)</li>
-    <li>1 1/2 cup of chicken broth (bone broth preferably)</li>
-    <li>2 tbs cornstarch</li>
-    <li>1 tsp of sherry wine (or sake)</li>
-    <li>Sliced green onions to garnish</li>
-    </ul>
-
-
-<br>*You can bloom the peppercorns by adding some oil to a medium hot pan and tossing them around a little until you can see them open. This is essential because it’s what makes the iconic Szechuan flavor pop. You can take the peppercorns out OR you can grind them up and put it back in for the extra Mala flavor.*<br/>
-
- 
-<br>First, mix your chili oil with the doubanjiang to create the sauce Then, by bringing a large deep pan to a medium heat and add some oil to cook your ground chicken and add seasoning to taste.  Just like last time, be sure not to over cook your chicken! Once you cook to where there’s no visible pink, transfer to a bowl and move to the side.<br/>
-
-<br>Then add your mushrooms. Cook for about 2 or 3 minutes then throw in your garlic and ginger. Stir for another 2-3 minutes and add your sauce mixture. This needs to cook for at another 2-3 minutes. Be sure to have some tissue near by because the sneeze attacks are bound to happen. By cooking the chili oil, doubanjiang and peppercorns, it will create super aromatic cloud so beware to those who are sensitive to smells.<br/>
-
-<br>Once homogenous, add your chicken back to the mix. Once mixed into the sauce, add your diced tofu. Be sure not to stir too vigorously because the tofu will break into smaller pieces and will defeat the purpose on the dish. While this cooks, in a separate bowl add your chicken broth and corn starch and whisk together until the cornstarch is dissolved. This is what gives mapo tofu it’s texture. Once mixed, add into the pan and add your dark soy sauce and brown rice syrup to taste. Let this cook for about 5-6 minutes or until the liquid has thickened.<br/>
-
-<br>And that’s my version of Mapo Tofu but with a twist! You can serve this on top of white rice, noodles or just about anything really! Hope you guys enjoy!<br/><br/>
-
-
-
-
+⦿4/⦿8/2⦿21<hr style="height:2px;border-width:0;color:black;background-color:black" /><br />
+Yo what's going on y'all it's zorn. It's been a fuckin' minute, but I'm back.
+<br /><br /> Last night, I decided to run through the Omerta set for the first time in a while. Hope you enjoy a few clips of myself butchering the fuck out of these songs. <br /><br /> Peace. <br /><br />
 
 <!--IMAGE CAROUSEL SECTION
-Find the name of the first image you want displayed in the carousel. Using this page as an example, you would replace the entire image carousel code with code for a single image. In this case, I disabled the code so I can simply bring it back in case I might need it the next time I want to write a news post. Make sure to be careful to take note of whether your file name ends in .jpg or .jpeg. This is EXTREMELY important. If you would like to convert it from .jpeg to .jpg you can simply rename the file extension manually in Google Drive or on your respective operating system's file explorer folder system.
+Find the name of the first image you want displayed in the carousel. Using this page as an example, you would replace File_004.jpg (on the line starting with <img id="image1") with the new file name. Make sure to be careful to take note of whether your file name ends in .jpg or .jpeg. This is EXTREMELY important. If you would like to convert it from .jpeg to .jpg you can simply rename the file extension manually in Google Drive or on your respective operating system's file explorer folder system. Now for the rest of the images, go down to the line starting with var imageList and replace the file names with the images' file names in the order you want them to be displayed. Remember to include the name of the image you selected to be displayed first at the beginning of this list, otherwise the carousel function will not work properly.
 
-If you only want to and/or need to upload a single image, simply use <img src="img/YourFileName.jpg" width="900"> Make sure to keep the width 900 so it stays consistent across all the news pages.
+If you only want to and/or need to upload a single image, simply replace the code with <img src="img/YourFileName.jpg" width="900"> Make sure to keep the width 900 so it stays consistent across all the news pages. Also, if this is the case, make sure to either delete or disable the carousel code. I have created tags to show you where the code begins and ends.
 -->
 
 <!-- IMAGE CAROUSEL CODE START-->
+<!--
 <div style="text-align:center">
-  <img id="image1" width="900" src="img/done.jpg">
+  <img id="image1" width="900" src="img/File_004.jpg">
   <br />
   <button class="button" onclick="previousButton3()">⬅️</button>
   <button class="button" onclick="nextButton3()">➡️</button>
@@ -82,7 +51,7 @@ If you only want to and/or need to upload a single image, simply use <img src="i
 
 <script>
 var myImage=document.getElementById("image1");
-var imageList=['done.jpg','peppercorn.jpg','tofu.jpg','beans.jpg','csauce.jpg','pan.jpg','rice.jpg','soy.jpg'];
+var imageList=['File_004.jpg', 'File_005.jpg','File_000.jpg','File_001.jpg','File_002.jpg','File_003.jpg','File_006.jpg','File_007.jpg','IMG_5672.jpg','IMG_5673.jpg','File_008.jpg','File_009.jpg','File_011.jpg','File_010.jpg'];
 var index = imageList.indexOf(window.currentImageName);
 
 //Next button
@@ -108,22 +77,22 @@ index = index - 1;
 	window.currentImageName=imageList[index];
 }
 </script>
+-->
 <!-- IMAGE CAROUSEL CODE END-->
 
-
-
+<img src="img/fuckyou.jpg" width="900">
+<br /><br />
 
 <!--VIDEO CAROUSEL SECTION
-Find the name of the first video you want displayed in the carousel. Using this page as an example, you would replace the entire video carousel with code for a single video. In this case, I disabled the code so I can simply bring it back in case I might need it the next time I want to write a news post.
+Find the name of the first video you want displayed in the carousel. Using this page as an example, you would replace IMG_1116.mov (on the line starting with <source src="img) with the new file name. Now for the rest of the videos, go down to the line starting with var videoList and replace the file names with the videos' file names in the order you want them to be displayed. Remember to include the name of the video you selected to be displayed first at the beginning of this list, otherwise the carousel function will not work properly.
 
-If you only want to and/or need to upload a single video, simply use <video src="img/YourFileName.mov" width="900" controls autoplay></video><br /> or <video src="img/YourFileName.mp4" width="900" controls autoplay></video><br /> depending on the video file type. Make sure to keep the width 900 so it stays consistent across all the news pages.
+If you only want to and/or need to upload a single video, simply replace the code with <video src="img/YourFileName.mov" width="900" controls autoplay></video><br /> or <video src="img/YourFileName.mp4" width="900" controls autoplay></video><br /> depending on the video file type. Make sure to keep the width 900 so it stays consistent across all the news pages. Also, if this is the case, make sure to either delete or disable the carousel code. I have created tags to show you where the code begins and ends.
 -->
 
 <!--VIDEO CAROUSEL START-->
-<!--    
 <div style="text-align:center">
   <video id="video2" width="900" controls autoplay>
-    <source src="img/IMG_1116.mov" type="video/mp4">
+    <source src="img/um.mp4" type="video/mp4">
         <source type="video/mp4">
     Your browser does not support HTML5 video.
   </video>
@@ -134,7 +103,7 @@ If you only want to and/or need to upload a single video, simply use <video src=
 
 <script>
 var myVideo=document.getElementById("video2");
-var videoList=['IMG_1116.mov', 'IMG_1110.mov','IMG_1117.mov','IMG_1115.mov','IMG_1109.mov','IMG_1125.mov','IMG_1123.mov','IMG_1131.mov'];
+var videoList=['um.mp4','um2.mp4','um3.mp4'];
 var index2 = videoList.indexOf(window.currentVideoName);
 
 //Next button
@@ -166,18 +135,17 @@ index2 = index2 - 1;
 	myVideo.play();
 }
 </script>
--->
 <!--VIDEO CAROUSEL END-->
 
-
 <!--PAGE INDEX SECTION
-The most recent page should always be denoted with the Omerta concentric circle symbol: ⦿. It may look like a box on some devices, but that is the symbol. Simply copy and paste if needed.
-Every other page should be numbered in descending order starting from the most recent page. In this case, the page is index.html, so you would make sure the numbers on the index are 1, 2, and 3, while this page (4) is implied with the ⦿ symbol. Eventually, there will be a page 5 and so-on. Since this is the page with the most recent news, make sure that the link redirects to "" rather than "/news" so it will simply redirect to itself rather than somewhere else.
+The most recent page should always be denoted with the Omerta concentric circle symbol: ?. It may look like a box on some devices, but that is the symbol. Simply copy and paste if needed.
+Every other page should be numbered in descending order starting from the most recent page. In this case, the page is index.html, so you would make sure the numbers on the index are 1, 2, and 3, while this page (4) is implied with the ? symbol. Eventually, there will be a page 5 and so-on. Since this is the page with the most recent news, make sure that the link redirects to "" rather than "/news" so it will simply redirect to itself rather than somewhere else.
 -->
 
 <br />
 <center>
 <a href="">⦿</a>
+<a href="13.html">13</a>
 <a href="12.html">12</a>
 <a href="11.html">11</a>    
 <a href="10.html">10</a>    
