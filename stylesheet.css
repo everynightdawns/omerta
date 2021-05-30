@@ -124,12 +124,30 @@ div.eyes div.pupil {
 	padding: 0px 0px 15px 0px;
 }
 
+.promo2 {
+	display: block;
+	max-width: 600px;
+	margin: auto;
+	padding: 0px 0px 15px 0px;
+}
+
 
 .language pre {
 	display: inline-block;
 	text-align: left;
 	max-width: 900px;
 	margin: auto;
+}
+
+.language2 {
+	display: block;
+	text-align: left;
+	max-width: 900px;
+	margin: auto;
+}
+
+.tab {
+	text-indent:40px
 }
 
 td.portal {

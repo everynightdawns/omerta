@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>⦿mɘRtA</title>
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon"sizes="180x180"href="/apple-touch-icon.png">
+<link rel="icon"type="image/png"sizes="32x32"href="/favicon-32x32.png">
+<link rel="icon"type="image/png"sizes="16x16"href="/favicon-16x16.png">
+
+<link rel="stylesheet" type="text/css" href="stylesheet.css" media ="all">
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/jqeye.min.js"></script>
+
+</head>
+
+<body>
+
+<center>
+<img src="img/omerta.png" width="900">
+</center>
+
+<div class="language2">
+<p class="tab">Omerta is an experimental 5-piece band, combining myriad genres from rap to hyperpop, glitchcore
+to bossa nova and more, and recontextualizing them within the framework of metal and rock. Comprised
+of members from various cultural and ethnic backgrounds, we use our art to express ourselves and our
+identities through the amalgamation of equally diverse visual and sonic styles. We wear these influences
+and inspirations on our sleeve in an effort to challenge the status quo in an artistic and musical sense
+as well as a cultural sense.</p>
+
+<p class="tab">Taking notes from the genre-mashing trailblazers before us, we also recognize the greater impact of the
+legacies of bands like System of a Down, Linkin Park, and others. Because of the unapologetic integration of
+their heritage into their work, they inspired an entire generation of youth, including ourselves, and carved
+out a space for the perennial "other". This, too, is our raison d'être.</p>
+
+<center>⦿</center>
+<i><p class="tab">The following playlist is a collection of a few preproduction demos off our upcoming EP "Suicycle". It
+is intended to be a companion album to our debut EP "Hyperviolence", expressing themes of discontentment,
+disillusionment, and disaffection, but, unlike its predecessor, the effects of these are primarily directed
+inwards rather than outwards.</p>
+
+<p class="tab">We parallel this sentiment through the music itself — still incorporating numerous elements from a variety
+of music, but the palette is slightly more unhinged and unpredictable. On one level, this is done symbolically
+to convey the aforementioned themes with regard to the post-modern attention economy rewarding those willing to
+don a veneer of agreeability at the expense of their individuality, no matter what that might be. On another level,
+this is the opening salvo to our war on the sonic stagnancy and strict adherence to uninspired tropes that seek
+to undermine everything we, and many others, love about music. We must first destroy before we can build anew.</p>																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											</i>
+</div>
+<br />
+<center>
+<iframe width="900px" height="300" scrolling="no" frameborder="0" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1264645480%3Fsecret_token%3Ds-jJnuZyIVf3L&color=%23f60c0b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
+</center>
+<br /><br />
+
+<div class="promo">
+<div style="text-align:center">
+<div class="image">
+  <img id="image1" width="900" src="img/promo-1.png">
+  </div>
+  <br />
+  <button class="button" onclick="previousButton3()">⬅️</button>
+  <button class="button" onclick="nextButton3()">➡️</button>
+</div>
+
+<script>
+var myImage=document.getElementById("image1");
+var imageList=['promo-1.png','promo-2.png','promo-3.png','promo-4.png','promo-5.png'];
+var index = imageList.indexOf(window.currentImageName);
+
+//Next button
+function nextButton3(){
+index = index + 1;
+	if(index==imageList.length){
+		index = 0;
+	}
+	else if(index==0){
+		index = index + 1;
+	}
+	myImage.src = 'img/'+imageList[index];
+	window.currentImageName=imageList[index];
+}
+
+//Previous button
+function previousButton3(){
+index = index - 1;
+	if(index < 0){
+		index = imageList.length - 1;
+	}
+	myImage.src ='img/'+imageList[index];
+	window.currentImageName=imageList[index];
+}
+</script>
+<!-- IMAGE CAROUSEL CODE END-->
+
+<br /><br />
+</div>
+
+<table width="900" border=0 cellpadding=3 cellspacing=3 height=20 align="center">
+<tr>
+<td class="portal" style="width: 100%"><a href="index.html">
+<div id="circular" class="eyes">
+    <div class="eye">
+        <div class="pupil"></div>
+    </div>
+</div>
+</a>
+</td>
+</tr>
+</table>
+
+<script type="text/javascript" src="js/function.js"></script>
+
+</body>
+</html>
