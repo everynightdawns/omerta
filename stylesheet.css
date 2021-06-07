@@ -284,6 +284,7 @@ a:hover {
 }
 
 .box .column1 {
+	width:200px;
     -moz-box-flex:1.0; /* Firefox */
     -webkit-box-flex:1.0; /* Safari and Chrome */
     -ms-flex:1.0; /* Internet Explorer 10 */
@@ -292,6 +293,7 @@ a:hover {
 }
 
 .box .column2 {
+	width:25px;
     -moz-box-flex:1.0; /* Firefox */
     -webkit-box-flex:1.0; /* Safari and Chrome */
     -ms-flex:1.0; /* Internet Explorer 10 */
@@ -300,6 +302,7 @@ a:hover {
 }
 
 .box .column3 {
+	width:150px;
     -moz-box-flex:1.0; /* Firefox */
     -webkit-box-flex:1.0; /* Safari and Chrome */
     -ms-flex:1.0; /* Internet Explorer 10 */
