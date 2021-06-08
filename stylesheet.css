@@ -153,6 +153,13 @@ div.eyes div.pupil {
 	margin: auto;
 }
 
+.booking {
+	display: block;
+	text-align: left;
+	max-width: 550px;
+	margin: auto;
+}
+
 .tab {
 	text-indent:40px
 }
@@ -308,4 +315,16 @@ a:hover {
     -ms-flex:1.0; /* Internet Explorer 10 */
     box-flex:1.0;
     background: none;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
