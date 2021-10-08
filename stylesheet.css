@@ -49,6 +49,77 @@ body.enter {
 	transform: translate(-50%, -50%);
 }
 
+.live {
+	display: block;
+	text-align: left;
+	margin: auto;
+}
+
+.tour {
+	display: block;
+	text-align: left;
+	max-width: 900px;
+	margin: auto;
+	padding: 50px 0 50px 0;
+}
+
+ul.event {
+	display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+    width: 100%;
+    background: none;
+    margin: 0;
+}
+
+li.date1 {
+	display: block;
+    flex: 0 1 100%;
+    list-style-type: none;
+    background: none;
+}
+
+li.date2 {
+	display: block;
+    flex: 0 1 100%;
+    list-style-type: none;
+    background: none;
+	text-align: center;
+}
+
+li.date3 {
+	display: block;
+    flex: 0 1 100%;
+    list-style-type: none;
+    background: none;
+	text-align: center;
+}
+
+li.date3 span {
+	color: #ffffff;
+	background-color: #000000;
+	padding: 5px 5px 5px 5px;	
+}
+
+li.date3 span:hover {
+	color: #000000;
+	background-color: #ffffff;
+}
+
+a.date3:link, a.date3:visited, a.date3:active {
+	color: inherit;
+}
+
+a.date3:hover {
+	color: inherit;
+}
+
+p.date4 {
+	border-style: dashed;
+	border-color: #000000;
+	border-width: 1px;
+}
+
 div.eyes {
     width: 500px;
     height: 277.78px;
