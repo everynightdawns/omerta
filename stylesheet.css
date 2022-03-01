@@ -41,6 +41,22 @@ body.construction {
 	overflow: auto;
 }
 
+body.sowwy {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	background-image: none;
+	background-color:#001D7F;
+	color:#ffffff;
+	font-family: Consolas, Inconsolata, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
+	font-size: 12pt;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	overflow: auto;
+}
+
 body.enter {
 	position: absolute;
 	top: 50%;
