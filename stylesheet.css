@@ -16,8 +16,8 @@ body {
 	margin-right: 0px;
 	margin-bottom: 0px;
 	background-image: none;
-	background-color:#ff0b0b;
-	color:#000000;
+	background-color:#001D7F;
+	color:#ffffff;
 	font-family: Consolas, Inconsolata, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
 	font-size: 12pt;
 	margin-top: 90px;
@@ -304,12 +304,12 @@ td.e {
 }
 
 a:link, a:visited, a:active {
-	color: black;
+	color: white;
 	text-decoration: none;
 }
 
 a:hover {
-	color: white;
+	color: black;
 	text-decoration: none;
 }
 
