@@ -154,20 +154,20 @@ div.eye {
 }
 
 div.eyes div.pupil {
-	left: 140px;
-	top: 55px;
-	width: 193.33px;
-	height: 179.44px;
+	left: 180px;
+	top: 75px;
+	width: 102px;
+	height: 126px;
     position: relative;
-    background-image: url(img/pupil.png);
+    background-image: url(img/iris.png);
     background-repeat: no-repeat;
     background-position: center center;  
-	background-size: 193.33px 179.44px;       
+	background-size: 102px 126px;       
 }
 
 #circular div.eye {
-    background-image: url(img/eyeball.png);
-	background-size: 500px 277.78px;
+    background-image: url(img/sclera.png);
+	background-size: 350px 180px;
 }
 
 #menu {
