@@ -158,8 +158,8 @@ input:active {
 
 button {
 	-webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 	font-family: Consolas, Inconsolata, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
 	font-size: 12pt;
 	border: 1px solid #000000;
