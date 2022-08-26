@@ -37,7 +37,7 @@ function omertext() {
                 output = output.replace(/e/g, 'ɘ');
         }
         
-        document.getElementById('output').innerHTML = output;
+        document.getElementById('output').value = output;
     
 }
 
