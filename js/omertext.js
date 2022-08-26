@@ -1,6 +1,6 @@
 function omertext() {
 
-        var text = document.getElementById('input').value;
+        var text = document.getElementById('input').value.trim();
         var output = '';
         
         output = text.toLowerCase().split('').map(function(c){
