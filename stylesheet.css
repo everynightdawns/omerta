@@ -25,6 +25,18 @@ body {
 	overflow: auto;
 }
 
+body.omertext {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-image: none;
+	background-color:#001D7F;
+	color:#ffffff;
+	font-family: Consolas, Inconsolata, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
+	font-size: 12pt;
+	overflow: auto;
+	margin-top: 15px;
+}
+
 body.construction {
 	margin-left: 0px;
 	margin-top: 0px;
@@ -94,7 +106,7 @@ body.enter {
 	display: block;
 	text-align: center;
 	margin: auto;
-	padding: 50px 0 50px 0;
+	padding: 0px 0 20px 0;
 }
 
 textarea.input {
