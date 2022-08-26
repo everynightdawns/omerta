@@ -137,6 +137,7 @@ input {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
+	border-radius: 0;
 	font-family: Consolas, Inconsolata, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
 	font-size: 12pt;
 	border: 1px solid #000000;
@@ -160,6 +161,7 @@ button {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
+	border-radius: 0;
 	font-family: Consolas, Inconsolata, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
 	font-size: 12pt;
 	border: 1px solid #000000;
@@ -167,6 +169,18 @@ button {
 	color: #000000;
 	padding: 10px;
 	transition-duration: 0.4s;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+button:hover {
+	background-color: #888888;
+}
+
+button:active{
+	border: 1px solid #ffffff;
+	background-color: #000000;
+	color: #ffffff;
 }
 
 .tooltip {

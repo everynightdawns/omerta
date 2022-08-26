@@ -37,23 +37,30 @@ function omertext() {
                 output = output.replace(/e/g, 'ɘ');
         }
         
-        document.getElementById("output").innerHTML = output;
+        document.getElementById('output').innerHTML = output;
     
 }
 
 function copy() {
-        var copy = document.getElementById("output");
+        if(document.getElementById('output').value != ''){
+                var copy = document.getElementById('output');
 
-        copy.select();
-        copy.setSelectionRange(0, 99999);
+                copy.select();
+                copy.setSelectionRange(0, 99999);
 
-        navigator.clipboard.writeText(copy.value);
+                navigator.clipboard.writeText(copy.value);
 
-        var tooltip = document.getElementById("tooltip");
-        tooltip.innerHTML = "c⦿PiɘD t⦿ cLipB⦿aRD";
+                var tooltip = document.getElementById('tooltip');
+                tooltip.innerHTML = 'c⦿PiɘD t⦿ cLipB⦿aRD';
+        }
 }
 
 function copied() {
-        var tooltip = document.getElementById("tooltip");
-        tooltip.innerHTML = "c⦿PY t⦿ cLiPB⦿aRd";
+        var tooltip = document.getElementById('tooltip');
+        tooltip.innerHTML = 'c⦿PY t⦿ cLiPB⦿aRd';
+}
+
+function reset() {
+        document.getElementById('input').value = '';
+        document.getElementById('output').value = '';
 }
