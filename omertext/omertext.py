@@ -10,8 +10,6 @@ def convert(str):
     new3 = '⦿mɘRtA'
     old4 = 'i'
     new4 = 'i'
-    old5 = 'l'
-    new5 = 'l'
     old6 = 'hyperviolence'
     new6 = 'hyPɘRvi⦿LɘNCE'
     old7 = 'suicycle'
@@ -21,13 +19,11 @@ def convert(str):
     compiled2 = re.compile(re.escape(old2), re.IGNORECASE)
     compiled3 = re.compile(re.escape(old3), re.IGNORECASE)
     compiled4 = re.compile(re.escape(old4), re.IGNORECASE)
-    compiled5 = re.compile(re.escape(old5), re.IGNORECASE)
 
     str = compiled1.sub(new1.lower(), str)
     str = compiled2.sub(new2, str)
     str = compiled3.sub(new3, str)
     str = compiled4.sub(new4.lower(), str)
-    str = compiled5.sub(new5.upper(), str)
 
     if 'e' in str.lower():
         str = str.replace('e','ɘ')
